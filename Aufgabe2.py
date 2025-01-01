@@ -1,5 +1,3 @@
-from datetime import date, datetime
-from doctest import Example
 import os
 
 spiegelei = ["Ei", "Salz", "Paprika", "Pfeffer"]
