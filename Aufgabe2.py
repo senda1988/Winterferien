@@ -1,4 +1,5 @@
 import os
+import turtle
 
 spiegelei = ["Ei", "Salz", "Paprika", "Pfeffer"]
 pasta = ["Pasta", "creme fraiche", "Käse", "Spinat", "salz", "Pfeffer"]
@@ -39,13 +40,6 @@ def weekday_after(weekday, days):
             print(f"weekday : {wochentag[tag_resut]}")
 
 
-# Rezept()
-
-# tag = input("einen Wochentag Eingeben: ")
-# zahl = int(input("eine Zahl eingeben: "))
-# weekday_after(tag.lower(), zahl)
-
-
 def anzahl_worte(name_file):
 
     if os.path.exists(name_file) and name_file.endswith(".txt"):
@@ -62,5 +56,21 @@ def anzahl_worte(name_file):
         print("Die Datei existiert nicht oder ist keine .txt-Datei!")
 
 
+def my_name():
+    turtle.write("Senda Zidi", font=("Arial", 60, "normal"))
+    turtle.done()
+
+
+Rezept()
+
+
+tag = input("einen Wochentag Eingeben: ")
+zahl = int(input("eine Zahl eingeben: "))
+weekday_after(tag.lower(), zahl)
+
+
 file_name = "Example.txt"
 anzahl_worte(file_name)
+
+
+my_name()
