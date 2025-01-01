@@ -5,7 +5,9 @@ salat = ["Salat", "Tomaten", "Gurke", "Olivenöl"]
 
 def Rezept():
     rezept = int(
-        input("welches Rezept ausgegeben werden soll 1. Spiegelei 2. Pasta 3. Salat")
+        input(
+            "welches Rezept ausgegeben werden soll 1. Spiegelei 2. Pasta 3. Salat   :"
+        )
     )
     if rezept == 1:
         print(f"Die Zutaten für Spiegelei sind: {spiegelei}")
